@@ -1,0 +1,12 @@
+date,description,amount
+2023-01-01,Salary Deposit,5000
+2023-01-05,Starbucks Coffee,-12.50
+2023-01-07,Uber Trip,-25.00
+2023-01-10,Amazon Prime,-14.99
+2023-01-15,Electric Bill,-120.00
+2023-01-20,Netflix Subscription,-15.99
+2023-02-01,Salary Deposit,5000
+2023-02-05,McDonalds Burger,-15.00
+2023-02-12,Shell Gas Station,-55.00
+2023-02-15,Verizon Wireless,-80.00
+... (repeat for 6 months)

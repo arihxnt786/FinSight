@@ -83,6 +83,6 @@ This project demonstrates full-stack application development, REST API integrati
 
 ## Author
 
-**Arihant** — BCA student at JIIT Delhi
+**Arihant** — BCA student at JIIT Noida
 
 [GitHub](https://github.com/arihxnt786)

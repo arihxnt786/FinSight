@@ -1,40 +1,88 @@
-# 💰 FinSight - Personal Finance Analytics
+# FinSight — Personal Finance Analytics
 
-FinSight is a full-stack AI-powered financial dashboard that transforms raw bank statements into actionable insights.
+> A full-stack financial analytics dashboard that turns transaction data into understandable spending, budgeting, and financial-health insights.
 
-## 🚀 Features
-- **AI Categorization**: Uses a Naive Bayes ML model to automatically categorize transactions.
-- **Financial Health KPIs**: Real-time calculation of savings rates and spending trends.
-- **Visual Analytics**: Interactive donut and bar charts via Recharts.
-- **Budget Tracking**: Set monthly limits and track actual spending.
-- **Exportable Reports**: One-click PDF summary generation.
+## Overview
 
-## 🛠 Tech Stack
-- **Frontend**: React.js, Tailwind CSS, Recharts, Lucide Icons.
-- **Backend**: FastAPI (Python), SQLAlchemy, SQLite.
-- **ML**: Scikit-Learn (TF-IDF + Multinomial Naive Bayes).
-- **Data**: Pandas for CSV/Excel parsing.
+FinSight combines a React frontend with a Python API backend and machine-learning-based transaction categorization. The application is designed around a simple goal: make personal financial data easier to explore and act on.
 
-## 🛠 Installation & Setup
+## Key Features
+
+- **Transaction categorization** using TF-IDF + Multinomial Naive Bayes
+- **Financial health KPIs** including savings rate and spending trends
+- **Interactive analytics** with donut and bar charts
+- **Budget tracking** with monthly limits and actual spending
+- **CSV/Excel transaction parsing** with Pandas
+- **PDF report generation** for financial summaries
+
+## Architecture
+
+```text
+React + Tailwind CSS
+        |
+        v
+FastAPI REST API
+        |
+   +----+-----+
+   v          v
+SQLite     ML Pipeline
+              |
+       TF-IDF + Naive Bayes
+```
+
+## Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| Frontend | React, Tailwind CSS, Recharts, Lucide Icons |
+| Backend | FastAPI, Python, SQLAlchemy |
+| Database | SQLite |
+| Machine Learning | scikit-learn, TF-IDF, Multinomial Naive Bayes |
+| Data Processing | Pandas |
+
+## Getting Started
 
 ### Backend
-1. `cd backend`
-2. `pip install -r requirements.txt`
-3. `uvicorn main:app --reload`
+
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
 
 ### Frontend
-1. `cd frontend`
-2. `npm install`
-3. `npm start`
 
-## 📈 ML Model Stats
-The model is trained on a proprietary dataset of 1,000+ transaction descriptions.
-- **Accuracy**: 94.2%
-- **Precision**: 91%
-- **Recall**: 89%
+```bash
+cd frontend
+npm install
+npm start
+```
 
-## 📸 Screenshots
-*(Placeholders for screenshots)*
-- Dashboard: `[Link]`
-- Transaction Table: `[Link]`
-- Budget Planner: `[Link]`
+## ML Evaluation
+
+The repository currently documents the following model evaluation figures on its training dataset:
+
+- Accuracy: **94.2%**
+- Precision: **91%**
+- Recall: **89%**
+
+These metrics are dataset-specific and should not be interpreted as production performance without independent validation.
+
+## Project Structure
+
+```text
+FinSight/
+├── backend/          # FastAPI application, database and ML logic
+├── frontend/         # React dashboard
+└── README.md
+```
+
+## Portfolio Focus
+
+This project demonstrates full-stack application development, REST API integration, data processing, applied machine learning, database design, and data visualization in one workflow.
+
+## Author
+
+**Arihant** — BCA student at JIIT Delhi
+
+[GitHub](https://github.com/arihxnt786)
